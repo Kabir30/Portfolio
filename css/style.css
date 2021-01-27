@@ -1,93 +1,443 @@
-*{margin:0;
-	padding:o;
+/**********
+GLobal css
+***********/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.hero{
-	width: 100;
-	height: 100vh;
-	background: #edf2fc;
-	position: relative;
-	font-family: sans-serif;
+a{
+	text-decoration: none
 }
-nav{
-	width: 85%;
-	margin: auto;
-	padding: 20px 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.logo{
-	width: 100px;
-	cursor: pointer;
-}
-
-nav ul li {
-	display: inline-block;
-	margin: 10px 20px;
+li{
 	list-style: none;
 }
-nav ul li a{
-	text-decoration: none;
-	color: #606163;
+input:focus{
+	outline: none;
 }
-nav ul li a:hover{
-	color: #ff4321;
+button:focus{
+	outline: none;
 }
-.info{
-	margin-top: 15%;
-	margin-left: 8%; 
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
 }
-.info h1{
-	font-size: 70px;
-	color: #212121;
-	margin-bottom: 20px;
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
+
+ /*****************
+ Header Section CSS
+ ******************/
+ header{
+ 	background-image: url(../img/banner-bg.png);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ 	height: 100vh;
+ }
+ .navbar{
+ 	padding-top: 3rem !important;
+ }
+ .nav-link{
+ 	margin-right: 30px !important;
+ 	color: #fff !important;
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-size: 16px;
+ 	font-weight: 400;
+ }
+.nav-link:hover{
+	border-bottom: 1px solid #ffb233;
 }
-span{
-	color:#ff4321;
+.navbar-nav {
+	padding-right: 180px !important;
 }
-.info p{
-	color: #606163;
-	line-height: 22px;
+.banner-text{
+	
+	margin-top: 180px;
 }
-.info a{
-	background: #212121;
-	text-decoration: none;
-	padding: 10px 18px;
+.banner-text h1{
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 52px;
+	font-weight: 700
+
+}
+.banner-text h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	margin-top: 48px;
+	color:#fff;
+}
+.down-icon{
+	margin: 80px auto 0;
+	background: #ffb233;
+	width: 20px;
+	height: 20px;
+	line-height:10px;
+	border-radius: 50%;
+}
+.down-icon a{
+	text-align: center;
 	color: #fff;
+}
+/************
+ About Me CSS
+ ************/
+ .about-me{
+ 	width: 100%;
+ 	padding:80px 0;
+ }
+ .about-me h2{
+ 	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+ }
+ .about-me img{
+ 	margin: 40px auto;
+ 	height: 140px;
+ 	width: 140px;
+ 	border-radius: 50%;
+ }
+ .about-me h4{
+ 	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #818181;
+ }
+ .about-me p{
+ 	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #3f3f3f;
+	width: 60%;
+	margin: 30px auto;
+ }
+ .about-social{}
+ .about-social ul{}
+ .about-social ul li{ 
+ 	 background-color: #c6c6c5;
+	 display: inline-block;
+	 width: 40px;
+	 height: 40px;
+	 line-height: 40px;
+	 border-radius: 50%;
+	 margin-right: 40px;
+	
+  }
+ .about-social ul li a{ 
+ 	color: #fff;
+  }
+  .about-social ul li:hover{
+  	background-color: #ffb233;
+  }
+  .about-social button{
+  	margin: 30px auto;
+  	width: 15%;
+  	padding: 6px 15px;
+  	background-color: transparent;
+  	text-transform: uppercase;
+  	border: 2px solid #51a351;
+  	border-radius: 3px;
+  	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #51a351;
+  }
+  /******************
+  Service Section CSS
+  *******************/
+  .service-section{
+  	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/suggest.png);;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ 	height: 80vh;
+  }
+ .service-heading{
+ 	
+ }
+ .service-heading h2{
+ 	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin: 120px 0;
+ }
+ .service-icon{}
+ .service-icon ul{}
+.service-icon ul li{
+ 	display: inline-block;
+ 	background-color: #ffb233;
+ 	width:60px;
+ 	height: 60px;
+ 	line-height: 60px;
+ 	border-radius: 50%;
+ 	margin-right: 80px;
+ }
+ .service-icon ul li a{
+ 	color: #fff;
+ 	font-size: 22px;
+ }
+ .service-icon ul li h6{
+ 	color: #fff;
+ 	margin-top: 20px;
+ 	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+ }
+ .service-icon ul li:hover{
+ 	width:80px;
+ 	height: 80px;
+ 	line-height: 70px;
+ 	border-radius: 50%;
+ 	border: 4px solid #7a5d2e;
+ 	transition: all .5s ease-in-out;
+ }
+ /************************
+ Statitistics section CSS
+ ************************/
+.statistics-section{
+	width: 100%;
+	background-color:#f3f4ff;
+	padding: 60px 0;
+}
+.line{
+	height: 1px;
+	width: 8%;
+	margin: 5px auto;
+	background-color: #51a351;
+}
+.project span, .clients span, .working-hour span, .coffee span{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+	color: #444444;
+}
+.project p, .clients p, .working-hour p, .coffee p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	font-style: italic;
+	color: #444;
+}
+/*********************
+Portfolio Section CSS
+**********************/
+.portfolio-section{
+	width: 100%;
+	padding: 60px 0;
+}
+.portfolio-section h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #7d8186;
+	margin-bottom: 40px;
+}
+.filter-list li{
 	display: inline-block;
-	margin: 30px 0;
-	border-radius: 5px;
-}
-.image-box{
-  width: 45%;
-  height: 80%;
-  position: absolute;
-  bottom: 0;
-  right: 100px;
-}
-.image-box img{
-	position: absolute;
-	height: 100%;
-	left: 50%;
-	bottom: 0;
-	transform: translateX(-50%);
-	transition: bottom 1s, left 1s;
-}
-.image-box:hover .back-image{
-	bottom: 40px;
-}
-.image-box:hover .main-image{
-	left: 54%;
-}
-.social-link{
-	margin-left: 8%;
-	margin-top: 100px;
-}
-.social-link a{
-	font-size: 38px;
-	color: #606163;
 	margin-right: 20px;
+	margin-bottom: 40px;
 }
-.social-link a:hover{
-	color:#3498db;
+.filter-list li a{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 40px;
+	color: #525252;
+
+}
+.img-gallery{
+	display: flex;
+}
+.effect{
+	position:relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.effect:hover .shadow-text{
+	width: 100%;
+	left: 0;
+	transition: all .5s;
+}
+.shadow-text{
+	position: absolute;
+	top: 0;
+	left: -120px;
+	bottom: 0;
+	width: 0%;
+	background-color: rgba(0,0,0,.25);
+	padding: 60px 30px;
+	transition: all .5s;
+}
+.shadow-text h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #51a351;
+}
+.shadow-text p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: rgba(255,255,255,.6);
+	margin-top: 40px;
+}
+.shadow-text a{
+	color:rgba(255,255,255,.6);
+	display: block;
+	text-align: center;
+}
+.shadow-text a i{
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid rgba(255,255,255,.6);
+	border-radius: 50%;
+	margin-top: 30px;
+}
+
+.shadow-text .shadow-line{
+	height: 2px;
+	width: 25px;
+	background:#51a351;
+}
+.btn-primary{
+	width: 12%;
+	margin: 0 auto;
+	background-color: #51a351 !important;
+	border:none !important;
+}
+/***********************
+Twstimonial Section CSS
+************************/
+.testimonial-section{
+	background-image: url(../img/testimonial-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 60px 0;
+}
+.testimonial-section h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #1d1d1d;
+}
+.quoto{
+	margin: 60px auto;
+    width: 55%;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color:#000;
+	line-height: 40px;
+}
+.owl-carousel .owl-item img {
+    display: inline-block !important;
+    width: auto !important;
+}
+
+
+/*******************
+Contact Section CSS
+*******************/
+.contact-section{
+	width: 100%;
+	padding: 60px 0;
+	background-image: url(../img/contact.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+.contact{
+	font-family: 'Open Sans', sans-serif;
+}
+.contact h2{
+	font-weight: 400;
+	font-size: 32px;
+	letter-spacing: 3px;
+	color: 
+}
+.contact p{
+	font-size: 16px;
+	font-weight: 400;
+}
+.contact a{
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: underline;
+}
+.mailing{
+	font-family: 'Open Sans', sans-serif;
+}
+.mailing span{
+	font-size: 14px;
+	font-weight: 400;
+}
+.mailing p{
+	font-size: 20px;
+	font-weight: 400;
+}
+.tel{
+	font-family: 'Open Sans', sans-serif;
+}
+.tel span{
+	font-size: 14px;
+	font-weight: 400;
+}
+.tel p{
+	font-size: 20px;
+	font-weight: 400;
+}
+.input-section{
+	padding: 60px 0 20px;
+}
+.input-section input{
+	background-color: transparent;
+	width: 20%;
+	color: #fff;
+	padding: 10px 6px;
+	margin: 0 10px;
+	border: 1px solid #fff;
+}
+.input-section input:focus{
+	outline: 1px solid #ffb233;
+}
+.message{
+	padding: 30px 0;
+}
+.message textarea{
+	width: 42%;
+	height: 150px;
+	padding: 15px;
+	background:transparent;
+	color: #fff;
+}
+.input-section button{
+	width: 42%;
+	background:#51a351;
+	padding: 6px 10px;
+	border-radius: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	border:none;
+}
+.copyright p{
+	color:#fff;
+	    margin: 0;
 }
